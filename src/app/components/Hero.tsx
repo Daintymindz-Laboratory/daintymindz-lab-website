@@ -58,16 +58,16 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 text-center">
+      <div className="relative z-10 max-w-6xl mx-auto pt-20 md:pt-16 px-6 lg:px-12 text-center">
         {/* Pre-heading */}
-        <div className="animate-fade-up opacity-0 mb-8">
+        {/* <div className="animate-fade-up opacity-0 mb-8">
           <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-amber/20 bg-amber/5">
             <div className="w-2 h-2 bg-amber rounded-full animate-pulse" />
             <span className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-amber">
               Innovation Lab
             </span>
           </div>
-        </div>
+        </div> */}
 
         {/* Main heading */}
         <h1 className="animate-fade-up opacity-0 delay-200 font-display font-extrabold leading-[0.9] tracking-tight">
