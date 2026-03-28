@@ -14,7 +14,7 @@ export default function About() {
       className="relative py-32 lg:py-40 overflow-hidden"
     >
       {/* Subtle background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-graphite-deep/50 to-transparent" />
+      <div className="section-tint-vertical absolute inset-0" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section label */}

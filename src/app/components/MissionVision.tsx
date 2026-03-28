@@ -91,7 +91,7 @@ export default function MissionVision() {
 
           {/* Vision */}
           <div
-            className={`relative p-10 lg:p-16 border border-foreground/5 bg-graphite-deep/30 ${
+            className={`surface-panel relative p-10 lg:p-16 border border-foreground/5 ${
               inView ? "animate-slide-right" : "opacity-0"
             }`}
           >

@@ -83,7 +83,7 @@ export default function Services() {
       className="relative py-32 lg:py-40 overflow-hidden"
     >
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-graphite-deep/80 via-background to-graphite-deep/80" />
+      <div className="section-depth absolute inset-0" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section header */}
@@ -119,7 +119,7 @@ export default function Services() {
           {services.map((service, i) => (
             <div
               key={service.title}
-              className={`group relative p-8 border border-foreground/5 bg-graphite-deep/30 rounded-sm card-hover ${
+              className={`surface-panel group relative p-8 border border-foreground/5 rounded-sm card-hover ${
                 inView ? "animate-fade-up" : "opacity-0"
               }`}
               style={{ animationDelay: `${300 + i * 100}ms` }}

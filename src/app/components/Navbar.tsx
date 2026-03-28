@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import ThemeToggle from "./ThemeToggle";
+import { useTheme } from "../hooks/useTheme";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -13,6 +15,7 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -65,6 +68,7 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+            <ThemeToggle theme={theme} onToggle={toggleTheme} />
             <a
               href="#contact"
               className="ml-4 px-6 py-2.5 bg-amber text-graphite-deep font-display font-bold text-sm tracking-wider rounded-sm hover:bg-amber-light transition-colors duration-300"
@@ -100,11 +104,12 @@ export default function Navbar() {
 
       {/* Mobile menu overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-graphite-deep/98 backdrop-blur-xl transition-opacity duration-500 md:hidden ${
+        className={`mobile-overlay fixed inset-0 z-40 backdrop-blur-xl transition-opacity duration-500 md:hidden ${
           mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
         <div className="flex flex-col items-center justify-center h-full gap-8">
+          <ThemeToggle theme={theme} onToggle={toggleTheme} compact />
           {navLinks.map((link, i) => (
             <a
               key={link.href}

@@ -14,7 +14,7 @@ export default function Contact() {
       className="relative py-32 lg:py-40 overflow-hidden"
     >
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-graphite-deep/60 to-background" />
+      <div className="section-depth-soft absolute inset-0" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber/[0.04] rounded-full blur-[150px]" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-12">
