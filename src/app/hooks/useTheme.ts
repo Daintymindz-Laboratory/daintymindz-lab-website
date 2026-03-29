@@ -72,7 +72,11 @@ function subscribe(onStoreChange: () => void) {
 }
 
 export function useTheme() {
-  const theme = useSyncExternalStore(subscribe, getSnapshot, () => "dark");
+  const theme = useSyncExternalStore<Theme>(
+    subscribe,
+    getSnapshot,
+    () => "dark"
+  );
 
   const updateTheme = (nextTheme: Theme) => {
     window.localStorage.setItem(STORAGE_KEY, nextTheme);
