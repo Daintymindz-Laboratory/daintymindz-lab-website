@@ -52,7 +52,7 @@ export default function About() {
             }`}
           >
             <p className="font-body text-lg leading-relaxed text-foreground/70">
-              DAINTYMINDZ LTD is a forward-thinking innovation laboratory
+              DAINTYMINDZ LAB is a forward-thinking innovation laboratory
               dedicated to transforming ideas into impactful solutions. We operate
               at the intersection of intellectual rigor and creative boldness,
               building technologies and strategies that drive meaningful progress.
