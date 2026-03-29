@@ -34,7 +34,7 @@ const themeScript = `(() => {
 export const metadata: Metadata = {
   title: "DAINTYMINDZ LAB — Where Precision Meets Innovation",
   description:
-    "DAINTYMINDZ LTD is a forward-thinking innovation lab driving intellectual energy, scientific rigor, and bold solutions for tomorrow's challenges.",
+    "DAINTYMINDZ LAB is a forward-thinking innovation lab driving intellectual energy, scientific rigor, and bold solutions for tomorrow's challenges.",
   keywords: [
     "DAINTYMINDZ",
     "innovation lab",
